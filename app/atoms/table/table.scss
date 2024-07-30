@@ -1,0 +1,74 @@
+
+th {
+  color: rgb(44, 223, 44);
+  font-weight: bold;
+  text-align: start;
+}
+
+.tableContainer {
+  max-width: 100%;
+  // max-height: 400px; /* Adjust the height as needed */
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.table tr {
+  cursor: pointer; /* Indicates that the row is clickable */
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color:rgb(44, 223, 44); 
+}
+
+.table tr.selected {
+  background-color: rgb(44, 223, 44); 
+  font-weight: bold; /* Optional: make the text bold */
+}
+
+.table tr.active {
+  background-color: rgb(44, 223, 44); 
+  font-weight: bold; /* Optional: make the text bold */
+}
+
+.remove_column {
+  width: 10%;
+}
+
+.sortable::after {
+  content: ' ▲▼'; /* Indicators for sorting */
+  font-size: 0.8em;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 2px;
+  padding: 5px 10px;
+  border: solid 1px rgb(44, 223, 44) ;
+  border-radius: 8px;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.pagination button.activePage {
+  background-color:rgb(44, 223, 44); 
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: rgb(44, 223, 44);
+}
